@@ -18,7 +18,7 @@ public class Escalonador {
         // Cada inteiro representa o indice de um processo.
         // ArrayDeque isola esta missao dos erros da FilaCircular.
         Deque<Integer> fila = new ArrayDeque<>();
-        int[] restante = duracoes;
+        int[] restante = duracoes.clone();
         for (int i = 0; i < nomes.length; i++) fila.addLast(i);
         Resultado resultado = new Resultado();
         while (!fila.isEmpty()) {

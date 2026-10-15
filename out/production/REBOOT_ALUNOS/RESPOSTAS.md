@@ -1,7 +1,8 @@
 # Operação REBOOT — registro da equipe
 
-Equipe:
-Integrantes:
+Equipe: AJ
+
+Integrantes: Juliano e Alexandre 
 
 ## Missão 1 — Inventário
 Previsão ANTES de executar (vetor final, tamanho, capacidade e deslocamentos): Previsão era para o vetor fazer seu delocamento mantendo os dados desejados sem perda de dados no inserir ou sem deixar dados de sobra na hora de remover. 
@@ -10,9 +11,9 @@ Resultado observado na versão inicial: O vetor perdeu seus dados na hora de ins
 
 Causa da falha e correção (explique; não basta colar o código): No método inserir invertemos o sentido do lopping para evitar perda de dados, e no método remover arrumamos no i < tamanho - 2 para i < tamanho - 1, assim faz o método chegar até o ultimo elemento.
 
-Custo de inserir no início e no fim com espaço; por quê? Custo é O(n), pois tem que fazer o deslocamento dos valores do array.
+Custo de inserir no início e no fim com espaço; por quê? O custo de inserir no inicio é O(n), pois precisa fazer o deslocamento dos valores que ja estavam no vetor para abrir espaço para o novo valor e o custo para inserir no fim com espaço é O(1), pois é só inserir na posição tamanho.
 
-Quem programou / quem testou / quem explicou: Ambos os membros
+Quem programou / quem testou / quem explicou: Realizamos todas as etapas em conjunto.
 
 ## Missão 2 — Fila circular
 Previsão ANTES de executar (posições físicas, início, fim, tamanho e ordem lógica):
@@ -25,12 +26,12 @@ Causa da falha e correção:
 Causa da falha: falta de % dados.lenght que pega o módulo e faz a base da fila circular funcionar
 
 Como distinguir cheia de vazia? Como obter O(1) nas operações?
-Obtemos O(1) nas operações através do resto da divisão do fim e do inicio + 1
+Obtemos O(1) nas operações através do resto da divisão do fim e do inicio + 1.
 
 Quem programou / quem testou / quem explicou: Ambos os membros
 
 ## Missão 3 — Escalonador
-Previsão ANTES de executar (turno, processo, executado, restante, fila):
+Previsão ANTES de executar (turno, processo, executado, restante, fila): Privisão para o escalonador era para ele criar os objetos que seriam executados e ir retirando da fila os que acabassem e retornando eles, não interessando a ordem em que entrassem, mas sim na ordem em que os objetos iam terminando com suas durações.
 
 Ordem de conclusão e tempo total:
 
@@ -38,7 +39,7 @@ Causa das falhas e correções:
 
 Por que um processo volta ao fim? Por que preservar o array de entrada?
 
-Quem programou / quem testou / quem explicou:
+Quem programou / quem testou / quem explicou: Ambos os membros
 
 ## Fechamento individual (cada integrante responde)
 Nome:
